@@ -148,11 +148,22 @@ $y-medium: 1.0rem;
     pre code {
         all: unset;
     }
+    a code {
+        @extend %link-default;
+    }
+
     .highlight {
         margin: $y-medium auto;
         & > pre {
             padding: 8px 8px;
         }
+    }
+    
+    figcaption h4 {
+        font-size: medium;
+        text-align: center;
+        font-weight: normal;
+        font-style: italic;
     }
 }
 #footer {
